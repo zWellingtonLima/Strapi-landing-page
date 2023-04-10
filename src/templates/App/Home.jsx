@@ -1,6 +1,8 @@
+import * as Styled from './styles'
+
 export default function Home() {
   return (
-  <div>
+  <Styled.Wrapper background='pink'>
     <h1>eae</h1>
-  </div>)
+  </Styled.Wrapper>)
 }
