@@ -1,13 +1,6 @@
 export const theme = {
   colors: {
-    mainBg: 'red',
+    mainBg: 'pink',
     secondaryBg: 'blue'
-  },
-  spacing: {
-    // short: 10,
-
-  },
-  ect: {
-    
   }
 }
