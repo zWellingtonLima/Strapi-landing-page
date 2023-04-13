@@ -15,13 +15,34 @@ export default {
       </ThemeProvider>
     )
   ],
+  argTypes: {
+    children: { type: 'string'},
+  },
   args: {
-    children: "Nem sei"
+    children: "Heading",
+  },
+  parameters: {
+    backgrounds: {
+      values: [
+        { name: 'Light', value: '#FFF' },
+        { name: 'Dark', value: '#0A1128' }
+      ]
+    }
   }
 }
 
-export const Default = {
+export const Primary = {
+  args: {
+    children: 'O texto está escuro.',
+    colorDark: true
+  }
+}
 
+export const Dark = {
+  args: {
+    children: 'O texto está claro.',
+    colorDark: false
+  }
 }
 
 // export const Template = (args) => <Heading {...args}/>
